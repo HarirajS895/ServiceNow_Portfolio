@@ -1,5 +1,5 @@
 export default function Skills(){
-  const skills = ['ITSM','GRC','LSD','CMDB','Glide Scripting','Flow Designer','REST/SOAP','SnowMirror','Oracle SQL','GitLab','Update Sets','Cloning'];
+  const skills = ['Asset Management','Change Management','Incident Management','CMDB','Glide Scripting','Flow Designer','Integration-REST/SOAP','Catalog items','SnowMirror','Oracle SQL','GitLab','Update Sets','Cloning'];
   return (
     <section id="skills" className="py-20 bg-white/3">
       <div className="max-w-6xl mx-auto px-6" data-aos="fade-right">
