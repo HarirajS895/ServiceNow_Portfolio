@@ -1,5 +1,5 @@
 export default function Certifications(){
-  const certs = ['CSA','CAD','CIS-ITSM','CIS-SAM'];
+  const certs = ['CSA(Certified system administrator)','CAD(Certified Application Developer)','CIS-ITSM(Certified Implementations specialist - IT Service Management)'];
   return (
     <section className="py-20">
       <div className="max-w-4xl mx-auto px-6" data-aos="zoom-in">

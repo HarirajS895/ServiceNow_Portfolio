@@ -47,9 +47,19 @@ export default function Projects() {
           {/* Left Box: Project Overview */}
           <div
             onClick={openDetails}
-            className="p-6 bg-white/5 rounded-lg cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+            className="
+              relative p-6 bg-white/5 rounded-lg cursor-pointer 
+              transform transition-all duration-300
+              hover:scale-110 hover:shadow-[0_0_25px_rgba(168,85,247,0.5)]
+              hover:border hover:border-purple-500
+              group
+            "
           >
-            <h3 className="font-semibold text-xl text-purpleish-600 mb-2">NextVision</h3>
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-purple-500 rounded-lg transition-all duration-300"></div>
+
+            <h3 className="font-semibold text-xl text-purpleish-600 mb-2">
+              NextVision
+            </h3>
             <p className="text-gray-700 mb-2">
               Custom ServiceNow application to manage AI devices lifecycle for construction companies.
             </p>
@@ -60,12 +70,17 @@ export default function Projects() {
               <li>ACLs, Catalogs & Flows</li>
               <li>Integration & automated approvals</li>
             </ul>
+
+            {/* Hover Label */}
+            <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 text-sm text-purple-400 font-medium">
+              👆 Click to view full project
+            </div>
           </div>
 
           {/* Right Box: Preview */}
           <div className="p-6 bg-white/5 rounded flex flex-col items-center justify-center">
             <div
-              className="w-64 h-40 rounded-lg overflow-hidden cursor-pointer"
+              className="w-64 h-40 rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-lg"
               onClick={() => openPreview(currentIndex)}
             >
               <img
@@ -143,14 +158,20 @@ export default function Projects() {
             className="relative bg-white shadow-xl rounded-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto p-6"
             onClick={(e) => e.stopPropagation()}
           >
-            <h3 className="text-2xl font-bold text-purple-700 mb-4">NextVision — Full Project Details</h3>
+            <h3 className="text-2xl font-bold text-purple-700 mb-4">
+              NextVision — Full Project Details
+            </h3>
 
-            <h4 className="text-lg font-semibold text-gray-800 mb-2">About the Application</h4>
+            <h4 className="text-lg font-semibold text-gray-800 mb-2">
+              About the Application
+            </h4>
             <p className="text-gray-700 mb-2">
               NextVision provides AI devices to construction companies like CASAgrand, L&T, SPCL. Previously, the process was manual via spreadsheets. As business expanded, they needed a ServiceNow solution to manage multiple stakeholders efficiently.
             </p>
 
-            <h4 className="text-lg font-semibold text-gray-800 mt-4 mb-2">Implementation</h4>
+            <h4 className="text-lg font-semibold text-gray-800 mt-4 mb-2">
+              Implementation
+            </h4>
             <p className="text-gray-700 mb-2">
               Implemented a custom ServiceNow application to automate:
             </p>
@@ -162,7 +183,9 @@ export default function Projects() {
               <li>Real-time tracking & reporting</li>
             </ul>
 
-            <h4 className="text-lg font-semibold text-gray-800 mt-4 mb-2">Workflow</h4>
+            <h4 className="text-lg font-semibold text-gray-800 mt-4 mb-2">
+              Workflow
+            </h4>
             <ol className="list-decimal pl-5 text-gray-700 mb-2">
               <li>Request sent to Release Management group for approval</li>
               <li>Dispatch Management handles delivery</li>
@@ -170,7 +193,9 @@ export default function Projects() {
               <li>Reporting automated for stakeholders</li>
             </ol>
 
-            <h4 className="text-lg font-semibold text-gray-800 mt-4 mb-2">Benefits</h4>
+            <h4 className="text-lg font-semibold text-gray-800 mt-4 mb-2">
+              Benefits
+            </h4>
             <ul className="list-disc pl-5 text-gray-700 mb-4">
               <li>Automated order & delivery process</li>
               <li>Reduces errors from spreadsheets</li>
