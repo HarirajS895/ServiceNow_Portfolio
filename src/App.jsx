@@ -5,6 +5,7 @@ import Skills from './components/Skills'
 import Certifications from './components/Certifications'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
+import FuturisticIdeas from './components/FuturisticIdeas';
 import Improvements from './components/Improvements'
 import Awards from './components/Awards'
 import Contact from './components/Contact'
@@ -21,6 +22,7 @@ export default function App(){
         <Certifications />
         <Experience />
         <Projects />
+        <FuturisticIdeas />
         <Improvements />
         <Awards />
         <Contact />
