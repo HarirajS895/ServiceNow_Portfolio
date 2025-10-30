@@ -63,7 +63,7 @@ export default function Hero() {
         >
           <div className="w-64 h-64 rounded-full ring-4 ring-purpleish-500 overflow-hidden shadow-2xl">
             <img
-              src="/assets/profile.jpg"
+              src="/assets/profile.jpeg"
               alt="profile"
               className="w-full h-full object-cover"
             />
