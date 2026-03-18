@@ -2,6 +2,7 @@ import { useState } from "react";
 import csaPDF from "../assets/csa-cert.pdf";
 import cadPDF from "../assets/cad-cert.pdf";
 import cisitsmPDF from "../assets/cis-itsm-cert.pdf";
+import cisdfPDF from "../assets/cis-df-cert.pdf";
 
 export default function Certifications() {
   const [selectedCert, setSelectedCert] = useState(null);
@@ -19,6 +20,10 @@ export default function Certifications() {
     {
       name: "CIS-ITSM (Certified Implementation Specialist – IT Service Management)",
       file: cisitsmPDF,
+    },
+     {
+      name: "Certified Implementation Specialist – Data Foundations(CMDB and CSDM) (CIS-DF (CMDB and CSDM))",
+      file: cisdfPDF,
     },
   ];
 
