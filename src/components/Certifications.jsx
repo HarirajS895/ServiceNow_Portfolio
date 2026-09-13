@@ -3,6 +3,8 @@ import csaPDF from "../assets/csa-cert.pdf";
 import cadPDF from "../assets/cad-cert.pdf";
 import cisitsmPDF from "../assets/cis-itsm-cert.pdf";
 import cisdfPDF from "../assets/cis-df-cert.pdf";
+import cishrPDF from "../assets/cis-hr-cert.pdf";
+
 
 export default function Certifications() {
   const [selectedCert, setSelectedCert] = useState(null);
@@ -16,6 +18,10 @@ export default function Certifications() {
     {
       name: "CAD (Certified Application Developer)",
       file: cadPDF,
+    },
+        {
+      name: "CIS- HR (Certified Implementation Specialist – Human Resources)",
+      file: cishrPDF,
     },
     {
       name: "CIS-ITSM (Certified Implementation Specialist – IT Service Management)",

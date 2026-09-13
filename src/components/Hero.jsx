@@ -81,7 +81,7 @@ export default function Hero() {
             <Typewriter
               options={{
                 strings: [
-                  'ServiceNow Consultant',
+                  'ServiceNow Senior Consultant',
                   'ServiceNow Developer',
                   'Platform Automation & Integrations',
                 ],
@@ -92,9 +92,9 @@ export default function Hero() {
           </div>
 
           <p className="mt-6 text-gray-300 max-w-xl">
-            I am a results-driven ServiceNow Developer with 3.5+ years of experience building scalable, secure, and high-performance enterprise solutions. 
-            My expertise spans server-side and client-side scripting, Flow Designer automation, system integrations, and platform optimization across ITSM and custom applications. 
-            I focus on designing maintainable architectures that align technology with real business outcomes.
+            I am a results-driven ServiceNow Developer with 4 years of experience building scalable, secure, and high-performance enterprise solutions. My expertise spans server-side 
+            and client-side scripting, Flow Designer automation, system integrations, and platform optimization across ITSM, HRSD and custom applications. I focus on designing maintainable 
+            architectures that align technology with real business outcomes.
           </p>
 
           {/* BUTTONS */}
